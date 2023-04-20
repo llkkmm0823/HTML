@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>06_img.html</title>
+</head>
+<body>
+	<!-- img: 이미지를 페이지에 표시하기 위한 태그 -->
+	<!-- 끝나는 태그가 없는 단일 태그, 어떤 이미지를 표시할지 추가적으로 src속성을 통해 기술 -->
+	<!-- 잘못 표기된 예 : <img></img> -->
+	
+	<img src="./images/daumlogo.png" border="1"/>
+	<h3>border1</h3><br/>  
+	<!--구식-->
+	<!--img태그에는 줄바꿈 기능이 없음-->
+	
+	<img src="images/daumlogo.png" width="200" border="1"/>
+	<h3>border1,width200</h3><br/> 
+	<!--현재 폴더를 쓰지 않아도 항상 기준점은 현재 폴더임-->
+	
+	<img src="./naver.png" width="200" height = "200" border="1"/>
+	<h3>border1,width200,height200</h3><br/>
+	<!-- width와 height 중 하나만 조정하면 나머지 크기는 비율에 맞춰 자동조정됨 -->
+	<!-- 비율을 생각하지 않고 width와 height를 동시에 지정하면 원래비율이 틀어져 언발란스해질 수 있음 -->
+	
+	<img src="naver.png" width="200" border="1"/>
+	<h3>border1,width200</h3><br/>
+	<!--같은 폴더에 있는 이미지를 사용하면 경로를 굳이 작성하지 않아도 됨. 파일이름만-->
+	
+	<img src="images/twiter.jpg" width="200" border="1"/>
+	<h3>border1,width200</h3><br/>
+	
+	<img src = "https://ssl.pstatic.net/melona/libs/1440/1440035/174d76c273bc422a79db_20230323120630149.jpg"width="200"border="1"/>
+	<h3>이미지 주소복사하기 border1,width200</h3><br/>
+	<!-- 인터넷의 이미 게시된 이미지의 URL을 얻는 방법 : 이미지위에서 마우스 오른쪽-> 이미지 주소복사 메뉴 혹은 속성창 통해 확인
+	다만 일부 그림들은 공개하지 않을 목적으로 URL을 분산하여 식별이 어렵게 하거나 
+	마우스 오른쪽 버튼을 누르지 못하게 하기도 함(자바스크립트 이용) _이럴땐 화면 캡쳐 이용하여 경로 지정 -->
+
+	<img src = "images/174d76c273bc422a79db_20230323120630149.jpg"width="200" border="1"/>
+	<h3>이미지 다른이름으로 저장하기 border1,width200</h3><br/>
+	<!-- 이미지를 다른 이름으로 저장 메뉴 선택하여 내 컴퓨터에 이미지 저장 -->
+	<!-- 링크로 붙여넣을 경우, 이미지 링크의 서버가 닫히면 볼 수 없게 됨 --> 
+	<!-- 저장할 경우 내 컴퓨터에서 삭제하지 않는 이상 상관없으나 저작권의 문제가 있을 수 있음 _ 상업적의 목적으로 사용할 경우 등등 -->
+	
+	<br/><br/>
+<!--이미지의 URL이 맞지 않거나 해당 이미지의 이름이 다르거나 실제 이미지가 존재하지 않을 경우, 풍선도움말 형식의 안내문을 표시-->
+<img alt = "그림이 존재하지 않습니다."src = "images/abcd.jpg"><br/><br/>
+
+</body>
+</html>
